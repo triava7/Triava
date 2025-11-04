@@ -135,33 +135,22 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 dark:from-black dark:via-slate-950 dark:to-black text-white overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-glow-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-accent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-glow-pulse" style={{ animationDelay: '1.5s' }}></div>
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="inline-block px-4 py-2 bg-brand-primary/10 border border-brand-primary/30 rounded-full backdrop-blur-sm mb-4">
-              <span className="text-sm font-medium text-brand-primary">Comece Hoje</span>
-            </div>
+      <section className="py-20 bg-gradient-to-br from-brand-primary via-brand-secondary to-brand-accent text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
             <h2 className="text-fluid-3xl font-bold">
-              <span className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent bg-clip-text text-transparent">
-                {t('hero_title')}
-              </span>
+              {t('hero_title')}
             </h2>
-            <p className="text-fluid-lg text-slate-300">
+            <p className="text-fluid-lg opacity-90">
               {t('hero_description')}
             </p>
             <Link to="/contact">
               <Button
                 size="lg"
-                className="relative bg-white text-slate-900 hover:bg-slate-100 rounded-xl shadow-2xl hover:shadow-brand-primary/50 font-semibold transition-all duration-300 group overflow-hidden"
+                className="bg-white text-brand-primary hover:bg-slate-100 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 group"
               >
-                <span className="relative z-10 flex items-center">
-                  {t('cta_quote')}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </span>
+                {t('cta_quote')}
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </div>
