@@ -64,23 +64,21 @@ export const Home = () => {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-6">
-                <div className="relative group bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 p-8 rounded-2xl border border-brand-primary/20 hover:border-brand-primary/50 hover:shadow-2xl hover:shadow-brand-primary/20 transition-all duration-300 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <Zap className="relative h-12 w-12 text-brand-primary mb-4" />
-                  <h3 className="relative text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-8 rounded-2xl border border-blue-200 dark:border-blue-800 hover:shadow-lg transition-shadow duration-300">
+                  <Zap className="h-12 w-12 text-brand-primary mb-4" />
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
                     {t('about_days')}
                   </h3>
-                  <p className="relative text-sm text-slate-600 dark:text-slate-400">
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
                     {t('about_days_desc')}
                   </p>
                 </div>
-                <div className="relative group bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 p-8 rounded-2xl border border-brand-accent/20 hover:border-brand-accent/50 hover:shadow-2xl hover:shadow-brand-accent/20 transition-all duration-300 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <Euro className="relative h-12 w-12 text-brand-accent mb-4" />
-                  <h3 className="relative text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 p-8 rounded-2xl border border-blue-200 dark:border-blue-800 hover:shadow-lg transition-shadow duration-300">
+                  <Euro className="h-12 w-12 text-brand-primary mb-4" />
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
                     {t('about_price')}
                   </h3>
-                  <p className="relative text-sm text-slate-600 dark:text-slate-400">
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
                     {t('about_price_desc')}
                   </p>
                 </div>
