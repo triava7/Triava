@@ -23,7 +23,7 @@ export const StickyCTA = () => {
       <Link to="/contact">
         <Button
           size="lg"
-          className="bg-brand-primary hover:bg-brand-primary/90 text-white rounded-full shadow-2xl hover:shadow-brand-primary/50 transition-all duration-300 group"
+          className="bg-gradient-to-r from-brand-primary to-brand-neon-cyan hover:shadow-2xl hover:shadow-brand-primary/50 text-white rounded-full font-semibold transition-all duration-300 group"
         >
           {t('cta_quote')}
           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
