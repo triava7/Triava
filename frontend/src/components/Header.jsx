@@ -144,7 +144,7 @@ export const Header = () => {
                 </Link>
               ))}
               <Link to="/contact" onClick={() => setIsOpen(false)}>
-                <Button className="w-full mt-4 bg-gradient-to-r from-brand-primary to-brand-neon-cyan hover:shadow-lg hover:shadow-brand-primary/30 text-white rounded-lg font-semibold">
+                <Button className="w-full mt-4 bg-brand-primary hover:bg-brand-primary/90 text-white rounded-lg">
                   {t('cta_quote')}
                 </Button>
               </Link>
