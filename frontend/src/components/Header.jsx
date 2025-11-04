@@ -90,7 +90,7 @@ export const Header = () => {
               <span className="ml-1 text-xs font-medium">{language.toUpperCase()}</span>
             </Button>
             <Link to="/contact">
-              <Button className="ml-2 bg-brand-primary hover:bg-brand-primary/90 text-white rounded-lg">
+              <Button className="ml-2 bg-gradient-to-r from-brand-primary to-brand-neon-cyan hover:shadow-lg hover:shadow-brand-primary/30 text-white rounded-lg font-semibold transition-all duration-300">
                 {t('cta_quote')}
               </Button>
             </Link>
