@@ -126,8 +126,9 @@ export const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-950">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-slate-50 dark:bg-slate-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-fluid-3xl font-bold text-slate-900 dark:text-white mb-4">
@@ -139,32 +140,37 @@ export const Home = () => {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: t('service_1_title'), desc: t('service_1_desc'), num: '01' },
-                { title: t('service_2_title'), desc: t('service_2_desc'), num: '02' },
-                { title: t('service_3_title'), desc: t('service_3_desc'), num: '03' },
-                { title: t('service_4_title'), desc: t('service_4_desc'), num: '04' },
+                { title: t('service_1_title'), desc: t('service_1_desc'), num: '01', color: 'brand-primary' },
+                { title: t('service_2_title'), desc: t('service_2_desc'), num: '02', color: 'brand-secondary' },
+                { title: t('service_3_title'), desc: t('service_3_desc'), num: '03', color: 'brand-accent' },
+                { title: t('service_4_title'), desc: t('service_4_desc'), num: '04', color: 'brand-coral' },
               ].map((service, idx) => (
                 <div
                   key={idx}
-                  className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className=\"relative group bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-transparent hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden\"
                 >
-                  <div className="text-5xl font-bold text-brand-primary/20 mb-4">
+                  <div className=\"absolute inset-0 bg-gradient-to-br from-${service.color}/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300\"></div>
+                  <div className={`relative text-5xl font-bold text-${service.color}/20 mb-4 group-hover:text-${service.color}/40 transition-colors`}>
                     {service.num}
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                  <h3 className=\"relative text-xl font-bold text-slate-900 dark:text-white mb-3\">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                  <p className=\"relative text-sm text-slate-600 dark:text-slate-400\">
                     {service.desc}
                   </p>
+                  <div className={`absolute top-0 right-0 w-20 h-20 bg-${service.color}/5 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500`}></div>
                 </div>
               ))}
             </div>
-            <div className="text-center mt-12">
-              <div className="inline-block bg-gradient-to-r from-brand-primary to-brand-accent text-white px-8 py-4 rounded-xl shadow-lg">
-                <p className="text-lg font-semibold">
-                  {t('special_price')} <span className="text-3xl font-bold">300€</span>
-                </p>
+            <div className=\"text-center mt-12\">
+              <div className=\"inline-block relative group\">
+                <div className=\"absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity\"></div>
+                <div className=\"relative bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white px-10 py-5 rounded-2xl shadow-2xl\">
+                  <p className=\"text-lg font-semibold\">
+                    {t('special_price')} <span className=\"text-4xl font-bold ml-2\">300€</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
