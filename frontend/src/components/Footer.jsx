@@ -110,7 +110,7 @@ export const Footer = () => {
               />
               <Button
                 type="submit"
-                className="w-full bg-brand-primary hover:bg-brand-primary/90 text-white rounded-lg"
+                className="w-full bg-gradient-to-r from-brand-primary to-brand-neon-cyan hover:shadow-lg hover:shadow-brand-primary/30 text-white rounded-lg font-semibold"
               >
                 {subscribed ? '✓ ' + t('form_success') : t('footer_subscribe')}
               </Button>
