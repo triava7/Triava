@@ -163,12 +163,12 @@ export const Home = () => {
                 </div>
               ))}
             </div>
-            <div className=\"text-center mt-12\">
-              <div className=\"inline-block relative group\">
-                <div className=\"absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity\"></div>
-                <div className=\"relative bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white px-10 py-5 rounded-2xl shadow-2xl\">
-                  <p className=\"text-lg font-semibold\">
-                    {t('special_price')} <span className=\"text-4xl font-bold ml-2\">300€</span>
+            <div className="text-center mt-12">
+              <div className="inline-block relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                <div className="relative bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white px-10 py-5 rounded-2xl shadow-2xl">
+                  <p className="text-lg font-semibold">
+                    {t('special_price')} <span className="text-4xl font-bold ml-2">300€</span>
                   </p>
                 </div>
               </div>
